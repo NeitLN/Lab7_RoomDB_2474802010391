@@ -13,6 +13,10 @@ interface ProductDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertProduct(product: ProductEntity)
 
+    // Part 4 debugging exercise: a plain (non-suspend) insert that runs on the caller's thread
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun insertProductBlocking(product: ProductEntity)
+
     @Update
     suspend fun updateProduct(product: ProductEntity)
 
