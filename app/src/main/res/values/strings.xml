@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">ProductRoomApp</string>
+    <string name="hint_name">Tên sản phẩm</string>
+    <string name="hint_price">Giá</string>
+    <string name="hint_quantity">SL</string>
+    <string name="btn_add">Thêm sản phẩm</string>
+    <string name="btn_clear_all">Xóa tất cả</string>
+    <string name="btn_delete">Xóa</string>
+    <string name="cd_favorite">Yêu thích</string>
+    <string name="product_detail">Giá: %1$s | SL: %2$d</string>
+    <string name="err_blank_name">Tên sản phẩm không được để trống</string>
 </resources>
