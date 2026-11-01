@@ -7,6 +7,6 @@
     <string name="btn_clear_all">Xóa tất cả</string>
     <string name="btn_delete">Xóa</string>
     <string name="cd_favorite">Yêu thích</string>
-    <string name="product_detail">Giá: %1$s | SL: %2$d</string>
+    <string name="product_detail">Giá: %1$,.0f đ | SL: %2$d</string>
     <string name="err_blank_name">Tên sản phẩm không được để trống</string>
 </resources>

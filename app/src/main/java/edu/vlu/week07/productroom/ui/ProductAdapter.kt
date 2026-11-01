@@ -27,7 +27,7 @@ class ProductAdapter(
         fun bind(item: ProductEntity) {
             b.tvName.text = item.name
             b.tvDetail.text = b.root.context.getString(
-                R.string.product_detail, item.price.toString(), item.quantity)
+                R.string.product_detail, item.price, item.quantity)
             b.ivFavorite.setImageResource(
                 if (item.isFavorite) android.R.drawable.btn_star_big_on
                 else android.R.drawable.btn_star_big_off
