@@ -9,8 +9,6 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import edu.vlu.week07.productroom.R
-import edu.vlu.week07.productroom.data.local.AppDatabase
-import edu.vlu.week07.productroom.data.local.ProductEntity
 import edu.vlu.week07.productroom.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -61,9 +59,5 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btnClearAll.setOnClickListener { viewModel.clearAll() }
-
-        // Part 4: raw DAO call on the main thread, no lifecycleScope/viewModelScope -> crashes
-        AppDatabase.getDatabase(this).productDao()
-            .insertProductBlocking(ProductEntity(name = "Main thread test", price = 1.0, quantity = 1))
     }
 }
