@@ -9,5 +9,7 @@ data class ProductEntity(
     @PrimaryKey(autoGenerate = true) val id: Int = 0,
     @ColumnInfo(name = "product_name") val name: String,
     @ColumnInfo(name = "product_price") val price: Double,
-    @ColumnInfo(name = "stock_quantity") val quantity: Int
+    @ColumnInfo(name = "stock_quantity") val quantity: Int,
+    @ColumnInfo(name = "is_favorite") val isFavorite: Boolean = false,
+    @ColumnInfo(name = "created_at") val createdAt: Long = System.currentTimeMillis()
 )
